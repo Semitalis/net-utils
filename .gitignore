@@ -1,0 +1,5 @@
+# Global
+
+# Root
+/.vs*
+/build*

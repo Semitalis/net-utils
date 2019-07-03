@@ -1,0 +1,54 @@
+---
+# General
+#BasedOnStyle: Google
+BreakBeforeBraces: Stroustrup
+BraceWrapping:
+  AfterStruct: true
+IndentWidth: 4
+UseTab: Never
+ColumnLimit: 99
+
+# Includes
+SortIncludes: true
+IncludeBlocks: Regroup
+IncludeIsMainRegex: '$'
+IncludeCategories:
+  - Regex:           '.*\.generated\.h'
+    Priority:        5
+  - Regex:           '.*'
+    Priority:        3
+  - Regex:           '^<.*>'
+    Priority:        2
+
+# sorting
+SortUsingDeclarations: true
+
+# alignment
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignEscapedNewlines: Right
+AlignOperands: true
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlignAfterOpenBracket: AlwaysBreak
+AlignTrailingComments: true
+PointerAlignment: Left
+# constructor
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+BreakConstructorInitializers: BeforeComma
+
+# blocks
+AlwaysBreakTemplateDeclarations: true
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeInheritanceComma: true
+BreakBeforeTernaryOperators: true
+
+# indentation
+NamespaceIndentation: None
+ReflowComments: true
+AccessModifierOffset: -4
+IndentPPDirectives: AfterHash
